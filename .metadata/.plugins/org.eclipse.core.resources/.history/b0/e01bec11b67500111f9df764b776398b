@@ -1,0 +1,10 @@
+package com.jdbc.test;
+
+public class ConnectionTest {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
