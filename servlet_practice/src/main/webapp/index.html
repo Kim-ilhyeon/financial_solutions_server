@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>servlet_practice</title>
+</head>
+<body>
+	<h1>servlet 실습</h1>
+	
+	<h2>servlet 기초 / 생명주기</h2>
+	<!-- 
+		상대 경로 : 바로 경로부터 입력하는 방법 -> 지금 위치하는 url에서 마지막 /부터 시작
+		절대 경로 : /로 경로로 시작해주는 방법 -> 지금 위치하는 url에서 ip:port/부터 시작
+	-->
+
+	<ul>
+		<!-- <li><a href="/hello">HelloServlet (http://localhost:8080/hello)</a></li> -->
+		<li><a href="hello">HelloServlet (http://localhost:8080/servlet/hello)</a></li>
+		<li><a href="lifecycle">LifecycleServlet(/lifecycle)</a></li>
+		<li><a href="counter">CounterServlet(/counter)</a></li>
+	</ul>
+	
+	<h2>파라미터 처리</h2>
+	<ul>
+		<li><a href="join.html">회원가입(POST)</a></li>
+		<li><a href="join?name=김일현&email=kih3915@gmail.com">회원가입(GET)</a></li>
+	</ul>
+
+	<h2>Forward vs Redirect</h2>
+	<ul>
+		<li><a href="forwardTest">ForwardTestServlet(/forwardTest)</a></li>
+		<li><a href="redirectTest">RedirectTestServlet(/redirectTest)</a></li>
+	</ul>
+
+	<h2>Cookie</h2>
+	<ul>
+		<li><a href="setCookie">setCookieServlet(/setCookie)</a></li>
+	</ul>
+
+	<h2>세션을 활용한 로그인/로그아웃</h2>
+	<ul>
+		<li><a href="loginTest">LoginTestServlet (/loginTest)</a></li>
+		<li><a href="sessionInfo">SessionInfoServlet (/sessionInfo)</a></li>
+		<li><a href="logoutTest">LogoutTestServlet (/logoutTest)</a></li>
+	</ul>
+
+
+</body>
+</html>

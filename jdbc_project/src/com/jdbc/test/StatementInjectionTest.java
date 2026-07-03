@@ -20,7 +20,7 @@ public class StatementInjectionTest {
 
 	public static void main(String[] args) {
 		// searchName은 사용자로부터 입력받은 값이라고 가정
-//		String searchName = "최지원";
+		// String searchName = "최지원";
 		String searchName = "' or '1' = '1";	// 이렇게 하는 경우 true가 되어 모든 값을 다 가져오는 해킹의 위험이 있음
 		
 		String sql = "SELECT * FROM MEMBER WHERE NAME = '" + searchName + "'";
