@@ -1,7 +1,0 @@
-package com.jdbc.practice;
-/*
- * DB의 접속 정보를 보관하는 클래스
- */
-public class DBInfo {
-
-}
