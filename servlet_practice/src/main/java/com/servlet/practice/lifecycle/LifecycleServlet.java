@@ -9,9 +9,10 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * Servlet은 tomcat이 3단계로 관리한다. 1. init() : 이 서블릿에 대한 최초 요청이 들어왔을 때 딱 1번 호출. (객체가
- * 생성 시점) -> 객체 생성 1회 (싱글톤) 2. service() : 요청이 들어올 때마다 호출됨. doGet/doPost등으로 자동으로
- * 분기해줌. 3. destroy() : 서버가 종료되거나 서블릿이 컨테이너에서 내려갈 때 딱 1회만 호출됨. -> 객체 삭제
+ * Servlet은 tomcat이 3단계로 관리한다. 
+ * 1. init() : 이 서블릿에 대한 최초 요청이 들어왔을 때 딱 1번 호출. (객체가 생성 시점) -> 객체 생성 1회 (싱글톤) 
+ * 2. service() : 요청이 들어올 때마다 호출됨. doGet/doPost등으로 자동으로 분기해줌. 
+ * 3. destroy() : 서버가 종료되거나 서블릿이 컨테이너에서 내려갈 때 딱 1회만 호출됨. -> 객체 삭제
  */
 @WebServlet("/lifecycle")
 public class LifecycleServlet extends HttpServlet {
